@@ -1,0 +1,44 @@
+.product-icons img {
+        height: 150px; 
+        display: block; 
+        cursor: pointer;
+        border-bottom: 1px solid #ccc; 
+    }
+/*Не забудем прижать иконки к левой части галереи:*/
+.product-icons {
+	float: left;
+}
+/*Ограничим высоту большого изображения и зададим рамку*/
+.img-container img {
+    height: 422px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+/*Выровняем блок с основным изображением по левому краю и зададим внешние отступы*/
+.img-container {
+   float: left;
+    margin: 10px;
+    width: 420px;
+    border: 1px solid #ccc;
+}
+/*Зададим отступы контейнеру с галереей для более гармоничного вида из браузера:*/
+.product {
+   margin: 30px;
+}
+
+     .product-icons img {
+        height: 130px; 
+        display: block; 
+        cursor: pointer;
+        border-bottom: 1px solid #ccc; 
+        opacity: .6;
+        padding: 10px;
+    }
+
+ .product-icons img:hover {
+	opacity:1;
+}
+.product-icons img:active {
+    opacity:1;
+}

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title>Галерея изображений</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="product"> <!-- блок с галереей изображений -->
+		<div class="product-icons" onclick="showImg(event)"> <!-- блок с иконками -->
+		    <span>Смартфон Apple iPhone 14 Dual SIM 512GB (звездный) </span>
+		    <img src="1.jpeg">
+			<span>Смартфон Apple iPhone 14 Dual SIM 512GB (синий) </span>
+			<img src="2.jpeg">
+			<span>Смартфон Apple iPhone 14 Dual SIM 512GB (полуночный)</span>
+			<img src="3.jpeg">	
+		</div>
+		<div class="img-container"> <!-- блок с основным изображением -->	  
+			<img src="1.jpeg" id="bigImg"> 
+		</div>
+	</div>
+<script>
+	    function showImg(event)
+	    {
+                     event = event || window.event; // получаем объект события
+	          var iconImg = event.Target || event.srcElement; // определяем текущий объект
+	          if (iconImg.tagName == "IMG"){ // если тип элемента - изображение, то
+	          document.getElementById("bigImg").src = iconImg.getAttribute('src');  // меняем значение src у элемента с id="bigImg" на src текущего объекта 
+		    }
+		} 
+</script>         
+</body>
+</html>
